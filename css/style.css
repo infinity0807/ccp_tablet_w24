@@ -1,0 +1,147 @@
+
+
+
+@media only screen and (min-width: 750px) and (max-width: 1050px){
+
+    img {
+        transition: transform 0.5s ease, opacity 0.5s ease;
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+        height: 50%;
+    }
+    
+    img:hover {
+        transform: scale(2);
+        opacity: 0.7;
+    }
+    
+    .picture-gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        justify-content: space-around;
+    }
+
+
+    .picture-gallery img {
+        width: 100%;
+        height: 100%;
+        
+        object-fit: cover;
+    }
+
+    .picture-gallery video{
+        width: 100%;
+        height: 100%;
+        
+    }
+
+   
+    
+
+    .skip {
+        position: absolute;
+        top: 12px;
+        left: 5px;
+        font-size: 30px;
+        margin-top: -100%;
+        background: #000000e7;
+        color: white;
+        padding: 15px;
+        z-index: 10;
+        
+    }
+
+    .skip:focus {
+        margin-top: 0;
+        
+    }
+
+    nav {
+        font-size: 32px;
+        z-index: -32;
+    }
+
+    p {
+        font-family: 'Open Sans', Arial, sans-serif;
+        font-size: 20px;
+        line-height: 2;
+        color: #003300;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    li {
+        font-family: 'Open Sans', Arial, sans-serif;
+        font-size: 32px;
+        line-height: 1.5;
+        color: #003300;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+
+    nav ul li.active {
+        background: #ddd;
+        
+        font-weight: bold;
+        border-bottom: 2px solid blueviolet;
+        }
+        
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: block;
+        justify-content: space-around;
+        
+        }
+
+    nav ul li {
+        display: block;
+        text-align: left;
+        padding: 10px; 
+        }
+
+
+    main,
+    header,
+    footer{
+        width: 100%;
+        margin: 0;
+        padding: 5px;
+        }
+
+    body, p, nav ul  a {
+            font-size: 30px;
+        }
+    h1, h2, h3{
+        font-size: 40px;
+        line-height: 1.5;
+    }
+}
+
+    
+/* img {
+    max-width: 100%;
+    height: auto;
+} */
+
+    
+/* body,
+p {
+        font-size: 16px;
+} */
+
+   
+/* .picture-gallery {
+    display: flex;
+    flex-direction: column;
+}
+
+.picture-gallery img {
+    margin-bottom: 10px;
+} */
+
+
